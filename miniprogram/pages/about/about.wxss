@@ -1,0 +1,29 @@
+/* pages/about/about.wxss */
+.header {
+  text-align: center;
+ }
+ .header image {
+  width: 200rpx;
+  height: 200rpx;
+ }
+ .line{
+   height: 2px;
+   width: 100%;
+   margin: 20px 0 ;
+   background-color: #c0c0c059;
+ }
+.weui-cell__bd{
+  height: 40px;
+  padding: 5px;
+  line-height: 40px;
+  display: flex;
+  flex-flow: row;
+}
+.tips{
+  width: 80%;
+}
+.img{
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}

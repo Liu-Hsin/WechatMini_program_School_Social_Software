@@ -1,0 +1,316 @@
+/**/
+/* 1. 设置整个页面的背景颜色 */
+page {
+  background: #f5f5f5;
+}
+
+/* 2.主盒子 */
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeeed8;
+}
+
+/* 3.左盒子*/
+.nav_left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20%;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.nav_left .nav_left_items {
+  height: 80rpx;
+  padding: 6rpx 0;
+  border-bottom: 1px solid #dedede;
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+
+.nav_left .nav_left_items.active {
+  background: #fff;
+  color: #3385ff;
+  border-left: 3px solid #3385ff;
+}
+
+/* 4.右盒子 */
+.nav_right {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  display: inline-block;
+  overflow: scroll;
+}
+
+/* 公告栏 */
+.blockNotice {
+  margin-right: 10px;
+  margin-top: 10rpx;
+  padding-bottom: 60px;
+}
+
+.weui-cell {
+  padding: 8px;
+}
+
+.inputArea {
+  margin-top: 100px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border: 0.5px #cccccc93 ridge;
+  padding: 8px 16px;
+  width: 82%;
+}
+
+.inputText {
+  height: 80px;
+  width: 100%;
+}
+
+.line {
+  margin: 16rpx 0;
+  height: 1px;
+  background-color: #e7e6e665;
+}
+
+.button {
+  margin-top: 60px;
+}
+
+
+/* 轮播图 */
+
+.imgData_items {
+  display: flex;
+  flex-flow: row;
+}
+
+.imgData {
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+.imgDelete {
+  padding: 10px;
+  width: 30%;
+  height: 220rpx;
+  text-align: center;
+  line-height: 220rpx;
+}
+
+.imgData_item {
+  width: 400rpx;
+  height: 200rpx;
+}
+
+.imgData_delete {
+  width: 72rpx;
+  height: 72rpx;
+}
+.tipsBar{
+  margin: 10px;
+}
+
+.blockInfo{
+  padding-bottom: 40rpx;
+}
+
+/* 社团人员 */
+
+.bossheadInfo {
+  display: flex;
+  flex-flow: row;
+}
+
+.weui-cell_info {
+  margin-left: 10px;
+  width: 340rpx;
+  height: 110rpx;
+}
+
+.weui-cell_Name {
+  padding-bottom: 2px;
+}
+
+.weui-cell_Info_img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.weui-cell_Img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.weui-cell_cancel_img {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+}
+
+.weui-cell_cancelImg {
+  width: 25px;
+  height: 25px;
+  margin-top: 25rpx;
+}
+
+
+/* 所有用户 */
+.weui-cell_all {
+  height: 100rpx;
+  line-height: 45rpx;
+}
+
+.weui-cell_allName {
+  margin-left: 10px;
+  width: 300rpx;
+  height: 50rpx;
+}
+
+.weui-cells__title {
+  margin: 10px 0;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 545;
+}
+
+.weui-input {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.weui-cell_collegaImages {
+  margin-left: 10px;
+}
+
+.collegaImages {
+  width: 120rpx;
+  height: 60rpx;
+}
+.adminImages{
+  width: 60rpx;
+  height: 60rpx;
+}
+.weui-cell_operate_img {
+  width: 160rpx;
+  height: 100rpx;
+  display: flex;
+  flex-flow: row;
+}
+
+.weui-cell_operate_add {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+}
+
+.weui-cell_operate_del {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+}
+
+.weui-cell_delete_user_Img {
+  width: 25px;
+  height: 25px;
+  margin-top: 25rpx;
+}
+
+
+/* 文章列表 */
+.weui-cell_title {
+  font-weight: 545;
+  font-size: 34rpx;
+}
+
+.weui-cell_title_Contents {
+  margin: 6rpx;
+  padding: 4rpx;
+  border-radius: 4px;
+  background-color: #e0e0e02c;
+  width: 480rpx;
+}
+
+.weui-cell_title_articleContent {
+  height: 50px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.weui-cell_articleInfo {
+  font-size: small;
+  color: #6b6b6b;
+}
+
+.tips {
+  font-size: small;
+  color: #6b6b6b;
+}
+
+.weui-cell_type {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.weui-cell_delete_img {
+  margin-left: 1vw;
+  padding-top: 20%;
+}
+
+.weui-cell_deleteImg {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+/* 评论 */
+
+.weui-cell_comments {
+  font-weight: 545;
+  font-size: 34rpx;
+  margin: 2px 0 2px 6px;
+}
+
+.weui-cell_commenter {
+  font-size: 14px;
+  color: #6b6b6bce;
+  margin-left: 12px;
+}
+
+.weui-cell_comment_Contents {
+  margin: 6rpx;
+  padding: 4rpx;
+  border-radius: 4px;
+  background-color: #e0e0e021;
+  width: 480rpx;
+}
+
+.weui-cell_title_commentContent {
+  margin-left: 4px;
+  height: 26px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.weui-cell_author{
+  padding-left: 4px;
+}
+.tip {
+  color: #7e7e7ed2;
+  font-size: 4px;
+}

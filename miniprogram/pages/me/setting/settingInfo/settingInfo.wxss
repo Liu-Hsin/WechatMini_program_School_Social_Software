@@ -1,0 +1,41 @@
+/* pages/me/setting/settingInfo/settingInfo.wxss */
+/* pages/me/setting/setting.wxss */
+.top{
+  height: 5px;
+  background-color: #ebebebce;
+}
+.infoPage{
+  margin: 20rpx 20rpx;
+  font-size: 40rpx;
+}
+.line{
+  height: 1px;
+  background: #ddddddcc;
+}
+.meinfo{
+  display: flex;
+  flex-flow: row;
+  height: 70rpx;
+  margin: 20rpx 0;
+  width: 100%;
+}
+.item{
+  height: 70rpx;
+  width: 150rpx;
+  line-height: 70rpx;
+}
+.itemLogion{
+  height: 70rpx;
+  width: 500rpx;
+  line-height: 70rpx;
+  max-height: 140rpx;
+}
+.text{
+  width: 100px;
+  /* background-color: gray; */
+}
+.button{
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+

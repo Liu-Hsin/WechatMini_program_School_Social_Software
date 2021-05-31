@@ -1,0 +1,54 @@
+/* pages/me/me.wxss */
+
+.row{
+  background-color: #eceaea2c;
+  margin-bottom: 10rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #b1b0b04f;
+  height: 250rpx;
+}
+
+.user{
+  text-align: center;
+}
+
+.username{
+  margin: 15rpx auto;
+}
+.user image{
+  width: 180rpx;
+  height: 180rpx;
+  /* border-radius: 90rpx; */
+  border: 1px solid #f6f6f6;
+}
+.base-info image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-left: 40rpx;
+  position: relative;
+  margin-right: 30rpx;
+  top: 4rpx;
+}
+.tags{
+  display: flex;
+  flex-flow: row;
+}
+
+.imageIcon{
+  width: 18%;
+}
+.text{
+  width: 60%;
+}
+.col-12{
+  height: 56rpx;
+  line-height: 56rpx;
+  border-bottom: 1px solid #b1b0b04f;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+  color: #000000;
+  background: #ffffff9a;
+}
+
+
+

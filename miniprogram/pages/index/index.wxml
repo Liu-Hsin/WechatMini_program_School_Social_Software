@@ -1,0 +1,101 @@
+<!--pages/index/index.wxml-->
+
+
+  <!-- 轮播图 -->
+<swiper class="swiper_lbt" indicator-dots="true" autoplay interval="3000" duration="2000" circular="true">
+  <block wx:for="{{url}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="bg" />
+    </swiper-item>
+  </block>
+</swiper>
+
+  <!--公告栏-->
+
+  <view class="notice">
+    <view class="noticeBar">
+      <image src="../icon/noticeBar.png" class="noticeBarImg"></image>
+    </view>
+    <view class="noticeBar">
+      <view class="noticeBarText">
+        <swiper class="swiper" vertical  autoplay="true" interval="2000" duration="500" circular="true">
+          <block wx:for="{{notices}}" wx:key="index">
+            <swiper-item>
+              <view class="swiperText">{{item}}</view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 项目分类-->
+  <view class="items">
+    <!--上-->
+    <view class="classification">
+      <!--活动-->
+      <view class="itemsActivity" id="0" bindtap="qushi">
+        <view>
+          <image class="image" src="../img/qushi.png"></image>
+        </view>
+        <view class="activityText">
+          <text>逸闻趣事</text>
+        </view>
+      </view>
+
+      <!--活动-->
+      <view class="itemsActivity" id="1" bindtap="questions">
+        <view>
+          <image class="image" src="../img/questions.png"></image>
+        </view>
+        <view class="activityText">
+          <text>疑问互答</text>
+        </view>
+      </view>
+    </view>
+
+    <!--中-->
+    <view class="classification">
+      <!--活动-->
+      <view class="itemsActivity" id="2" bindtap="sight">
+        <view>
+          <image class="image" src="../img/sign.png"></image>
+        </view>
+        <view class="activityText">
+          <text>校园一角</text>
+        </view>
+      </view>
+      <!--活动-->
+      <view class="itemsActivity" id="3" bindtap="love">
+        <view>
+          <image class="image" src="../img/love.png"></image>
+        </view>
+        <view class="activityText">
+          <text>表白交友</text>
+        </view>
+      </view>
+    </view>
+
+    <!--下-->
+    <view class="classification">
+      <!--活动-->
+      <view class="itemsActivity" bindtap="activityPage">
+        <view>
+          <image class="image" src="../img/activity.png"></image>
+        </view>
+        <view class="activityText">
+          <text>社团活动</text>
+        </view>
+      </view>
+      <!--活动-->
+      <view class="itemsActivity" bindtap="chengji">
+        <view>
+          <image class="image" src="../img/chengji.png"></image>
+        </view>
+        <view class="activityText">
+          <text>CET查询</text>
+        </view>
+      </view>
+    </view>
+  </view>

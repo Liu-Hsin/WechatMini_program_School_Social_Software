@@ -1,0 +1,78 @@
+<view class="items">
+  <view class="itemTitle">
+    <text>活动名称：</text>
+    <text>{{activityDetail.title}}</text>
+  </view>
+
+
+  <view class="le"></view>
+  <view class="itemTags">
+    <view class="itemTag">
+      <text class="tagText">组织人员：</text>
+      <text>{{activityDetail.organizer}}</text>
+    </view>
+    <view class="itemTag">
+      <text class="tagText">参与人数：</text>
+      <text>{{activityDetail.number}}</text>
+    </view>
+    <view class="itemTag">
+      <text class="tagText">活动地点：</text>
+      <text>{{activityDetail.place}}</text>
+    </view>
+    <view class="itemTag">
+      <text class="tagText">联系方式：</text>
+      <text>{{activityDetail.contact}}：{{activityDetail.link}}</text>
+    </view>
+  </view>
+
+
+  <view class="le"></view>
+  <view class="itemContent">
+
+    <text user-select="true">{{activityDetail.contents}}</text>
+  </view>
+
+
+  <view class="le"></view>
+  <view class="date">
+    <view>
+      <text>开始时间：</text>
+      <text>{{activityDetail.star_time}}</text>
+    </view>
+    <view>
+      <text>结束时间：</text>
+      <text>{{activityDetail.end_time}}</text>
+    </view>
+    <view>
+      <text>创建者：</text>
+      <text>{{activityDetail.office}}：{{activityDetail.nickName}}</text>
+    </view>
+  </view>
+
+
+
+  <view class="line"></view>
+
+
+  <view>
+    <view class="infoText">
+      报名人员信息：
+    </view>
+    <view class="le"></view>
+    <block wx:for="{{parter}}" wx:key="index">
+      <view>
+        <text class="tagText">姓名：</text>
+        <text>{{item.parter_name}}</text>
+      </view>
+      <view>
+        <text class="tagText">班级：</text>
+        <text>{{item.school_class}}</text>
+      </view>
+      <view>
+        <text class="tagText">联系方式：</text>
+        <text>{{item.link_qq}}</text>
+      </view>
+      <view class="le"></view>
+    </block>
+  </view>
+</view>

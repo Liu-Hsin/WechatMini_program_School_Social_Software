@@ -1,0 +1,110 @@
+<!--pages/college/addcollege/addcollege.wxml-->
+<view class="contents">
+  <!-- 标题输入框 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">活动名称：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder-class="weui-input__placeholder" bindinput="getName" placeholder="请输入活动名称" />
+    </view>
+  </view>
+
+  <!-- 组织者输入框 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">组织人员：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder-class="weui-input__placeholder" bindinput="getColleger"
+        placeholder="请输入组织方" />
+    </view>
+  </view>
+
+
+  <!-- 参与人数框 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">参与人数：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder-class="weui-input__placeholder" bindinput="getNumber"
+        placeholder="活动参与人数" />
+    </view>
+  </view>
+
+
+  <!-- 地点 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">活动地点：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder-class="weui-input__placeholder" bindinput="getPlace"
+        placeholder="活动地点: 西苑 A104" />
+    </view>
+  </view>
+
+  <!-- 联系方式 -->
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select weui-cell_select-before">
+      <view class="weui-cell__hd">
+        <picker bindchange="changeLinks" value="{{linksIndex}}" range="{{links}}">
+          <view class="weui-select">{{links[linksIndex]}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__bd weui-cell__bd_in-select-before">
+        <input class="weui-input" placeholder-class="weui-input__placeholder" bindinput="getLink" placeholder="请输入号码" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 详情输入框 -->
+
+  <view class="textarea">
+    <view class="weui-cell weui-cell_active">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder-class="weui-input__placeholder" placeholder="请输入活动详细情况"
+          style="height: 3.3em" maxlength="50" bindinput="getContent" auto-height="true" />
+        <view class="weui-textarea-counter">{{wordNumber}}/50</view>
+    </view>
+  </view>
+  </view>
+
+    <!-- 开始时间 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">开始时间：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{startime}}" start="2017-01-01" end="2025-12-31" bindchange="getStartime">
+        <view class="weui-input">{{startime}}</view>
+      </picker>
+    </view>
+  </view>
+
+
+    <!-- 结束时间 -->
+  <view class="weui-cell weui-cell_active">
+    <view class="weui-cell__hd">
+      <view class="weui-label">结束时间：</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{endtime}}" start="2017-01-01" end="2025-12-31" bindchange="getEndtime">
+        <view class="weui-input">{{endtime}}</view>
+      </picker>
+    </view>
+  </view>
+
+
+  <view class="sendArticle">
+    <label class="weui-agree">
+      <checkbox class="weui-agree__checkbox-check" checked="true" />
+      <span class="weui-agree__checkbox"></span>
+      <span class="weui-agree__text">阅读并同意<navigator url=" " class="weui-agree__link">《隐私条款》</navigator></span>
+    </label>
+    <a class="weui-btn weui-btn_primary confirm" bindtap="issuance" >确认发布</a>
+  </view>
+
+</view>

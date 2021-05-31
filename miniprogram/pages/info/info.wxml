@@ -1,0 +1,101 @@
+<!--pages/info/info.wxml-->
+<view class="top"></view>
+<view class="infoPage">
+  <!-- 头像昵称 -->
+  <view class="info_images">
+    <view class="imgview">
+      <image class="image" src="{{info.avatarUrl}}"></image>
+    </view>
+
+    <view class="info_admin_college">
+      <view class="info_admin_college_view">
+        <image class="info_admin_college_view_Images" src="{{info.bosshead?'../icon/collega_true.png':'../icon/collega_false.png'}}">
+        </image>
+      </view>
+
+      <view class="info_admin_college_view">
+        <image class="info_admin_view_Images" src="{{info.admin?'../icon/admin_true.png':''}}">
+        </image>
+      </view>
+    </view>
+  </view>
+
+  <view class="meinfo">
+    <view class="text">
+      昵称
+    </view>
+    <view class="item">
+      {{info.nickName}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 性别 -->
+  <view class="meinfo">
+    <view class="text">
+      性别
+    </view>
+    <view>
+      {{info.sex}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 年龄 -->
+  <view class="meinfo">
+    <view class="text">
+      年龄
+    </view>
+    <view>
+      {{info.age}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+    <!-- 社团职务 -->
+    <view class="meinfo">
+    <view class="text">
+      社团
+    </view>
+    <view>
+      {{info.office}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 所在地 -->
+  <view class="meinfo">
+    <view class="text">
+      城市
+    </view>
+    <view>
+      {{info.province}}{{info.city}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 联系方式 -->
+
+  <!-- QQ -->
+  <view class="meinfo">
+    <view class="text">
+      QQ
+    </view>
+    <view>
+      {{info.qqnumber}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 邮箱 -->
+  <view class="meinfo">
+    <view class="text">
+      邮箱
+    </view>
+    <view>
+      {{info.mailnumber}}
+    </view>
+  </view>
+  <view class="line"></view>
+
+</view>

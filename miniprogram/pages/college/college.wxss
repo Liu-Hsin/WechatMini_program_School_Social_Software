@@ -1,0 +1,43 @@
+/* pages/college/college.wxss */
+page {
+  background-color: #ebebeb96;
+}
+.titleBar{
+  margin-top: 10rpx;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  background-color:#ffffff;
+}
+.none{
+
+  width: 20%;
+}
+.itembg {
+  border: 2px solid #ebebeb96;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 10rpx 8rpx 0 8rpx;
+  padding: 10px;
+}
+.titleName{
+  font-size: 46rpx;
+  font-weight: 600;
+  text-align: center;
+  /* background-color: gold; */
+  width: 60%;
+}
+.titleImg{
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.titleImg image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.nickName{
+  color: gray;
+  font-size: 14px;
+}

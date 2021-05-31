@@ -1,0 +1,115 @@
+/* pages/activity/activity.wxss */
+page {
+  background: #f0f0f0;
+}
+
+.backgroundItem {
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 10px 5px 5px 5px;
+  padding: 8px;
+}
+
+.items {
+  padding: 4px;
+}
+
+.itemTitle {
+  font-size: 40rpx;
+  margin: 8rpx 0;
+}
+
+.itemTags {
+  font-size: 35rpx;
+  margin-left: 10px;
+}
+
+.itemTag {
+  color: #707070;
+  margin: 8rpx;
+}
+
+.tagText {
+  display: inline-block;
+  width: 30%;
+  color: black;
+}
+
+.le {
+  height: 1rpx;
+  background: #ccc9c9;
+  margin: 5rpx 0;
+}
+
+.itemContent {
+  font-size: 38rpx;
+  display: inline-block;
+  height: 120px;
+}
+
+.contents {
+  padding: 20rpx;
+}
+
+.inputButton {
+  margin: 20px 0;
+  padding: 0 0;
+  font-size: 40rpx;
+}
+
+/*表单*/
+/*button*/
+.btn {
+  font-size: 40rpx;
+  font-weight: bolder;
+  padding: 10rpx 0;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: 20rpx 10%;
+  background: #ffffff;
+  color: #277a00;
+}
+
+
+/*content*/
+
+
+.drawerContent {
+  height: 170px;
+  text-align: left;
+}
+.drawerGrid {
+  display: flex;
+  flex-flow: row;
+  margin: 10px;
+}
+
+.titleGrid {
+  width: 30%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.inputTable {
+  width: 70%;
+}
+.inputGrid {
+  border: 2rpx solid #ccc;
+  height: 30px;
+  width: 90%;
+  line-height: 30px;
+  font: 12px "microsoft yahei";
+  background: #fff;
+  color: #000;
+  padding-left: 4px;
+}
+
+.tipsText {
+  font-size: 13px;
+}
+
+.tip_jinggao {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 20px;
+}

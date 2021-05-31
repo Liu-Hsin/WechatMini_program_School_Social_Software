@@ -1,0 +1,2 @@
+
+  <web-view src="{{newsUrl}}"></web-view>

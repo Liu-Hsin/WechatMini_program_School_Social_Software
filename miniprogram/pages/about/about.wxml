@@ -1,0 +1,43 @@
+<!--pages/about/about.wxml-->
+
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="weui-msg">
+    <view class="weui-msg__icon-area"></view>
+    <view class="weui-msg__text-area">
+      <view class="header">
+        <image class="logo" src="../images/logo.jpg"></image>
+      </view>
+      <h2 class="weui-msg__title">合经院社区</h2>
+      <view class="weui-msg__custom-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells">
+            <view class="weui-cell__bd">
+              <view class="tips" bindtap="pact">隐私协议</view>
+              <view><image class="img" src="../icon/icon_come.png"></image></view>
+            </view>
+            <view class="weui-cell__bd">
+              <view class="tips" bindtap="service">用户服务协议</view>
+              <view><image class="img" src="../icon/icon_come.png"></image></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="weui-msg__opr-area">
+      <view class="weui-btn-area">
+        <view class="weui-msg__desc" style="padding:0 35px">在使用过程中遇到各种问题、反馈以及申请管理员、社团人员请联系客服操作</view>
+        <button type="primary" open-type="contact">联系客服</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-msg__extra-area">
+    <view class="weui-footer">
+      <view class="weui-footer__links">
+        <a class="weui-footer__link">学校官网</a>
+      </view>
+      <view class="weui-footer__text">Copyright &copy; 2021 合肥经济学院 刘鑫</view>
+    </view>
+  </view>
+</view>

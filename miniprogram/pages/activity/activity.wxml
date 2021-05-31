@@ -1,0 +1,81 @@
+<!--pages/activity/activity.wxml-->
+
+<block wx:for="{{activityDetail}}" wx:key="index">
+  <view class="backgroundItem">
+    <view class="items" bindtap="goDetail" data-id="{{item._id}}">
+      <view class="itemTitle">
+        <text>活动名称：</text>
+        <text>{{item.title}}</text>
+      </view>
+      <view class="le"></view>
+      <view class="itemTags">
+        <view class="itemTag">
+          <text class="tagText">组织人员：</text>
+          <text>{{item.organizer}}</text>
+        </view>
+        <view class="itemTag">
+          <text class="tagText">参与人数：</text>
+          <text>{{item.number}}</text>
+        </view>
+        <view class="itemTag">
+          <text class="tagText">活动地点：</text>
+          <text>{{item.place}}</text>
+        </view>
+        <view class="itemTag">
+          <text class="tagText">开始时间：</text>
+          <text>{{item.star_time}}</text>
+        </view>
+      </view>
+      <view class="le"></view>
+      <view class="itemContent">
+        <text>活动详情：</text>
+        <view class="contents">
+          <text user-select="true">{{item.contents}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="le"></view>
+    <!--button-->
+    <view id="{{item._id}}" class="btn" bindtap="powerDrawer" data-statu="open">我要参加</view>
+  </view>
+
+  <!--提交框-->
+  <view wx:if="{{inputDialog}}">
+    <view class="weui-mask" bindtap="close" style="background:#ccc9c957;"></view>
+    <view class="weui-dialog weui-skin_android">
+      <view class="weui-dialog__hd">
+        <strong class="weui-dialog__title">填写信息</strong>
+      </view>
+      <view class="drawerContent">
+        <view class="drawerGrid">
+          <view class="titleGrid">个人姓名:</view>
+          <view class="inputTable">
+            <input class="inputGrid" bindinput="getName" placeholder="请填写真实姓名"></input>
+          </view>
+        </view>
+        <view class="drawerGrid">
+          <view class="titleGrid">专业班级:</view>
+          <view class="inputTable">
+            <input class="inputGrid" bindinput="getClass" placeholder="专业班级"></input>
+          </view>
+        </view>
+        <view class="drawerGrid">
+          <view class="titleGrid">联系方式:</view>
+          <view class="inputTable">
+            <input class="inputGrid" bindinput="getPhone" placeholder="手机号/QQ号/微信号"></input>
+          </view>
+        </view>
+        <view class="tipsText">
+          <image src="../images/tip_jinggao.png" class="tip_jinggao"></image>
+          <text>确认报名即代表同意本小程序</text>
+          <text style="color:red">《隐私条款》</text>
+        </view>
+      </view>
+      <button type="primary" style="width:200rpx;height:60rpx;" plain="true" bindtap="inputButton"
+        class="inputButton">确定</button>
+    </view>
+  </view>
+</block>
+
+
+<view style="height:50px"></view>

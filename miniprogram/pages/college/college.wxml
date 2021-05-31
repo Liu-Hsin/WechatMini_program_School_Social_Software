@@ -1,0 +1,52 @@
+<!--pages/college/college.wxml-->
+<view class="titleBar">
+  <view class="none">
+
+  </view>
+  <view class="titleName">
+    活动列表
+  </view>
+
+  <view class="titleImg">
+    <image src="../icon/addCollege.png" bindtap="addCollege"></image>
+  </view>
+</view>
+<view>
+
+
+  <block wx:for="{{activityDetail}}" wx:key="index">
+    <mp-slideview id="{{item._id}}" bindhide="hide" bindshow="show" buttons="{{slideButtons}}" icon="{{true}}"
+      bindbuttontap="slideButtonTap">
+      <view class="itembg">
+        <view class="items" bindtap="goDetail" data-id="{{item._id}}">
+          <view class="itemTitle">
+            <text>活动名称：</text>
+            <text>{{item.title}}</text>
+          </view>
+          <view class="le"></view>
+          <view class="itemTags">
+            <view class="itemTag">
+              <text class="tagText">组织人员：</text>
+              <text>{{item.organizer}}</text>
+            </view>
+            <view class="itemTag">
+              <text class="tagText">参与人数：</text>
+              <text>{{item.number}}人</text>
+            </view>
+            <view class="itemTag">
+              <text class="tagText">活动地点：</text>
+              <text>{{item.place}}</text>
+            </view>
+            <view class="itemTag">
+              <text class="nickName">创建者：</text>
+              <text class="nickName">{{item.office}}</text>
+              <text class="nickName">{{item.nickName}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </mp-slideview>
+  </block>
+
+
+</view>

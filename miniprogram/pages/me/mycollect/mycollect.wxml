@@ -1,0 +1,26 @@
+<view class="item">
+  <view class="weui-slidecells">
+    <block wx:for="{{collects}}" wx:key="index">
+
+      <view class="slidecells" id="{{item.collectid}}" bindtap="goDetail">
+        <mp-slideview id="{{item._id}}" bindhide="hide"  bindshow="show" buttons="{{slideButtons}}" icon="{{true}}"
+          bindbuttontap="slideButtonTap">
+
+          <view class="titleBar">
+            <view class="title">
+              {{item.title}}
+            </view>
+          </view>
+
+          <view class="contentBar">
+            <view class="type">
+              来源：{{item.author}}
+            </view>
+          </view>
+
+        </mp-slideview>
+      </view>
+      <view class="line"></view>
+    </block>
+  </view>
+</view>

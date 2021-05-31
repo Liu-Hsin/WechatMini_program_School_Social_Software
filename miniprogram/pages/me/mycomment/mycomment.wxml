@@ -1,0 +1,27 @@
+<!--pages/me/mycomment/mycomment.wxml-->
+
+
+<block wx:for="{{mycomment}}" wx:key="index">
+  <view class="item" id="{{item.article_id}}" bindtap="goDetail">
+    <mp-slideview id="{{item._id}}" bindhide="hide" bindshow="show" buttons="{{slideButtons}}" icon="{{true}}"
+      bindbuttontap="slideButtonTap">
+
+      <!-- 内容 -->
+      <view class="content">
+        <text>{{item.content}}</text>
+      </view>
+      <!-- 文章详情 -->
+      <view class="acrticleInfo">
+        <view>
+          文章：{{item.articletitle}}
+        </view>
+        <view>
+          分类：{{item.articletype}}
+        </view>
+      </view>
+
+    </mp-slideview>
+  </view>
+
+
+</block>

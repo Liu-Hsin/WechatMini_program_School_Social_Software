@@ -1,0 +1,32 @@
+<!--pages/me/myissuance/myissuance.wxml-->
+<!-- <text>我的发布</text> -->
+
+<view class="item">
+  <view class="weui-slidecells">
+    <block wx:for="{{issuance}}" wx:key="index">
+
+      <view class="slidecells" id="{{item._id}}" bindtap="goDetail">
+        <mp-slideview id="{{item._id}}" bindhide="hide" bindshow="show" buttons="{{slideButtons}}" icon="{{true}}"
+          bindbuttontap="slideButtonTap">
+
+          <view class="titleBar">
+            <view class="title">
+              {{item.title}}
+            </view>
+          </view>
+
+          <view class="contentBar">
+            <view class="type">
+              分类：{{item.type}}
+            </view>
+            <view class="weui-media-box__desc">
+              {{item.content}}
+            </view>
+          </view>
+
+        </mp-slideview>
+      </view>
+      <view class="line"></view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,119 @@
+/* pages/index/share/sharedetail/sharedetail.wxss */
+.titleBar{
+  display: flex;
+  flex-flow: row;
+}
+.collect_view{
+  margin-top: 25rpx;
+  width: 26px;
+  height: 26px;
+  padding: 1px;
+}
+.collectImage{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+
+.itemDetail{
+  margin: 15rpx;
+}
+.itemTitle{
+  font-size: 50rpx;
+  margin: 8rpx 0 0 0;
+  font-weight: 545;
+  width: 90%;
+}
+.weui-cells__title{
+  width: 300rpx;
+  margin-top: 4px;
+  margin-bottom: 8px;
+
+}
+.itemAT{
+  margin: 8rpx 0 0 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 34rpx;
+}
+.itemAuthor{
+  color: #868686;
+  width: 400rpx;
+}
+.itemTags{
+  margin-left: 80rpx;
+  color: #868686;
+}
+.itemContent{
+  padding: 10rpx;
+  font-size: 18px;
+}
+
+.img_1{
+  max-height: 200rpx;
+  max-width: 200rpx;
+  margin: 5rpx 0 5rpx 36rpx;
+}
+.line{
+margin-bottom: 8px;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+/* image{
+  margin: 0 8%;
+  padding: 20rpx;
+  width: 64rpx;
+  height: 64rpx;
+} */
+.weui-article__h2{
+  margin-left: 20rpx;
+}
+
+
+.tips{
+  margin-top: 15rpx;
+  font-size: 50rpx;
+}
+
+.inputCentent{
+  height: 100px;
+  width: 94%;
+  border: 1px solid gray;
+  margin: 20rpx 3%;
+}
+.inputName{
+  border: 1px solid gray;
+  margin-top:80rpx;
+  margin: 0 20rpx;
+  height: 30px;
+  margin-bottom: 30rpx;
+}
+button{
+  margin-top: 30rpx;
+  margin-bottom: 100rpx;
+}
+
+
+.pinglunItems{
+  display: flex;
+  flex-flow: row;
+  font-size: 30rpx;
+  margin-left: 4%;
+  margin-top: 15rpx;
+  margin-right: 4%;
+  width: 92%;
+}
+.pinglunItems_avatarurl{
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 42rpx;
+}
+.pinglunItems_info{
+  border-radius: 50%;
+}
+.pinglun_content{
+  margin-left: 10rpx;
+
+}

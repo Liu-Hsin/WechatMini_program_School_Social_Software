@@ -1,0 +1,85 @@
+<!--pages/me/setting/settingInfo/settingInfo.wxml-->
+<!--pages/me/setting/setting.wxml-->
+<!-- <text>信息设置</text> -->
+<view class="top"></view>
+<view class="infoPage">
+  <!-- 头像昵称 -->
+  <view class="meinfo">
+    <view class="text">
+      昵称
+    </view>
+    <view>
+      <input bindinput="getname" class="itemLogion" maxlength='10' value="{{nickName}}" placeholder="{{nickName}}" />
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 性别 -->
+  <view class="meinfo">
+    <view class="text">
+      性别
+    </view>
+    <view>
+      <input bindinput="getsex" class="item" maxlength='3' value="{{sex}}" placeholder="{{sex}}" />
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 年龄 -->
+  <view class="meinfo">
+    <view class="text">
+      年龄
+    </view>
+    <view>
+      <input bindinput="getage" class="item" maxlength='4' value="{{age}}" placeholder="{{age}}"/>
+    </view>
+  </view>
+  <view class="line"></view>
+
+
+  <!-- 所在地 -->
+  <view class="meinfo">
+    <view class="text">
+      城市
+    </view>
+    <view>
+      <input bindinput="getprovince" class="item" maxlength='8' value="{{province}}" placeholder="{{province}}"/>
+    </view>
+    <view>
+      <input bindinput="getcity" class="item" maxlength='8' value="{{city}}" placeholder="{{city}}"/>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <!-- 联系方式 -->
+  <view>
+    <!-- QQ -->
+    <view class="meinfo">
+      <view class="text">
+        QQ
+      </view>
+      <view>
+        <input bindinput="getqq" class="itemLogion" maxlength='14' value="{{qqnumber}}" placeholder=" {{qqnumber}}"/>
+      </view>
+    </view>
+    <view class="line"></view>
+
+    <!-- 邮箱 -->
+    <view class="meinfo">
+      <view class="text">
+        邮箱
+      </view>
+      <view>
+        <input bindinput="getmail" class="itemLogion" maxlength='30' value="{{mailnumber}}" placeholder="{{mailnumber}}"/>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+
+
+
+  <view class="button">
+    <button type="primary" bindtap="settingInfo">保存</button>
+  </view>
+
+</view>

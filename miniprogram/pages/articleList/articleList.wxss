@@ -1,0 +1,102 @@
+/* pages/home/home.wxss */
+page {
+  background-color: #ebebeb96;
+}
+
+.searchItem {
+  line-height: 50%;
+  display: flex;
+  flex-flow: row;
+  padding: 6px;
+  background: #d8d4d46e;
+}
+.srearchIcon{
+  margin-top: 3.5px;
+  padding: 4px;
+  background-color: white;
+  height: 26px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.searchInputItem {
+  padding: 4px 4px 4px 0;
+  height: 28px;
+  width: 80%;
+}
+
+.searchInput {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: white;
+  padding: 6px;
+}
+
+.searchButton {
+  padding-top: 5px;
+  width: 20%;
+  text-align: center;
+}
+
+.items {
+  margin: 20rpx;
+}
+
+.itembg {
+  margin: 10rpx 8rpx 0 8rpx;
+  border: 2px solid #ebebeb96;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.itemTitle {
+  font-size: 46rpx;
+  margin: 4rpx 0;
+  font-weight: 350;
+}
+
+.itemAT {
+  margin: 5rpx 0;
+}
+
+.itemAuthor {
+  color: #313131;
+  display: flex;
+  flex-flow: row;
+}
+
+.authorImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.authorName {
+  height: 80rpx;
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 24rpx;
+  margin-left: 40rpx;
+}
+
+.img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.itemContent {
+  font-size: 36rpx;
+  margin: 0 5rpx;
+}
+.itemImages{
+  margin-top: 8px;
+}
+.itemImages image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.imagesList{
+  margin: 0 10px 0 5px;
+}
+.none {
+  height: 20px;
+  background: #ebebeb3f;
+}

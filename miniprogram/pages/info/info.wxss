@@ -1,0 +1,66 @@
+/* pages/info/info.wxss */
+.top{
+  height: 5px;
+  background-color: #ebebebce;
+}
+.infoPage{
+  margin: 20rpx 20rpx;
+  font-size: 40rpx;
+  border-radius: 10px;
+}
+.info_images{
+  display: flex;
+  flex-flow: row;
+}
+.image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+.info_admin_college{
+  height: 140rpx;
+}
+.info_admin_college_view{
+  width: 140rpx;
+  height: 70rpx;
+}
+.info_admin_college_view_Images{
+  padding: 5px;
+  width: 120rpx;
+  height: 60rpx;
+}
+.info_admin_view_Images{
+  padding: 5px;
+  width: 120rpx;
+  height: 50rpx;
+}
+.line{
+  height: 1px;
+  background: #ddddddcc;
+}
+.meinfo{
+  display: flex;
+  flex-flow: row;
+  height: 60rpx;
+  margin: 20rpx 0;
+  width: 100%;
+}
+.meInfo{
+  display: flex;
+  flex-flow: row;
+  height: 120rpx;
+  margin: 20rpx 0;
+  width: 100%;
+}
+.item{
+  width: 400rpx;
+}
+
+.text{
+  width: 100px;
+  /* background-color: gray; */
+}
+.button{
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}

@@ -1,0 +1,26 @@
+/* pages/college/addcollege/addcollege.wxss */
+.textarea{
+  margin: 5rpx 0;
+}
+ .line{
+  height: 1px;
+  background: #ebebeb8c;
+  margin: 16rpx 0;
+}
+
+.weui-cell__bd{
+  font-size: 32rpx;
+  margin: 0rpx 14rpx;
+}
+
+
+
+.sendArticle{
+  padding-top: 0rpx;
+}
+
+.confirm{
+  margin-top: 30rpx;
+  width: 250rpx;
+  margin-bottom: 30rpx;
+}

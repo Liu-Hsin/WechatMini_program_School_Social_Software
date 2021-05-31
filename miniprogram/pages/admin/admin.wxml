@@ -1,0 +1,245 @@
+<!--pages/me/admin/admin.wxml-->
+<!--主盒子-->
+<view class="container">
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+
+    <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+      公告栏
+    </view>
+    <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+      轮播图
+    </view>
+    <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+      社团人员
+    </view>
+    <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" bindtap="switchRightTab" data-id="4">
+      所有用户
+    </view>
+    <view class="nav_left_items {{curNav == 5 ? 'active' : ''}}" bindtap="switchRightTab" data-id="5">
+      文章列表
+    </view>
+    <view class="nav_left_items {{curNav == 6 ? 'active' : ''}}" bindtap="switchRightTab" data-id="6">
+      评论列表
+    </view>
+  </view>
+
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+    <!-- 公告栏 -->
+    <view wx:if="{{curNav==1}}">
+      <view class="blockNotice">
+        <view class="textarea">
+          <block wx:for="{{indexTextData}}" wx:key="index">
+            <mp-slideview id="{{item}}" bindhide="hide" bindshow="show" buttons="{{slideButtons}}" icon="{{true}}"
+              bindbuttontap="slideButtonTap" data-index="{{index}}">
+              <view class="weui-cell">
+                {{item}}
+              </view>
+            </mp-slideview>
+            <view class="line"></view>
+          </block>
+        </view>
+
+
+        <view class="inputArea">
+          <textarea class="inputText" bindinput="getNotices" value="{{notice}}" maxlength="20"
+            placeholder="请输入公告内容"></textarea>
+          <view class="weui-textarea-counter">{{wordNumber}}/20</view>
+        </view>
+        <view class="button">
+          <button type="primary" plain="true" bindtap="setNotices">立即添加</button>
+        </view>
+      </view>
+
+    </view>
+
+
+
+    <!-- 轮播图 -->
+    <view wx:if="{{curNav==2}}">
+      <view class="imgData_items">
+        <view class="imgData" id="0" bindtap="showImg">
+          <image class="imgData_item" src="{{indexImgData_0}}"></image>
+        </view>
+        <view class="imgDelete" id="0" bindtap="updateImg">
+          <image class="imgData_delete" src="../icon/icon_update.svg"></image>
+        </view>
+      </view>
+
+      <view class="imgData_items">
+        <view class="imgData" id="1" bindtap="showImg">
+          <image class="imgData_item" src="{{indexImgData_1}}"></image>
+        </view>
+        <view class="imgDelete" id="1" bindtap="updateImg">
+          <image class="imgData_delete" src="../icon/icon_update.svg"></image>
+        </view>
+      </view>
+
+      <view class="imgData_items">
+        <view class="imgData" id="2" bindtap="showImg">
+          <image class="imgData_item" src="{{indexImgData_2}}"></image>
+        </view>
+        <view class="imgDelete" id="2" bindtap="updateImg">
+          <image class="imgData_delete" src="../icon/icon_update.svg"></image>
+        </view>
+      </view>
+
+      <view class="tipsBar">
+        <view class="tips">
+          <text>tip：</text>选择长宽比合适的图片；<text>
+            如果没有加载出来请下拉刷新</text>
+            <text>
+              图片只会加载所点击的图
+          </text></view>
+      </view>
+
+    </view>
+
+
+    <view wx:if="{{curNav==3}}">
+      <!-- 设置社团人员 -->
+      <view class="blockInfo">
+        <view class="infoArea">
+          <block wx:for="{{bossheads}}" wx:key="index">
+            <view class="bossheadInfo">
+              <view class="weui-cell_Info_img">
+                <image class="weui-cell_Img" src="{{item.avatarUrl}}"></image>
+              </view>
+              <view class="weui-cell_info">
+                <view class="weui-cell_Name">{{item.nickName}}</view>
+                <view>
+                  <view class="weui-cell_Name">{{item.office}}</view>
+                </view>
+              </view>
+              <view class="weui-cell_cancel_img">
+                <image id="{{item._id}}" class="weui-cell_cancelImg" src="../icon/icon_cancel.png"
+                  bindtap="cancelCollega"></image>
+              </view>
+            </view>
+            <view class="line"></view>
+          </block>
+        </view>
+      </view>
+    </view>
+
+
+    <view wx:if="{{curNav==4}}">
+      <!-- 设置普通用户 -->
+      <view class="blockInfo">
+        <view class="infoArea">
+          <block wx:for="{{users}}" wx:key="index">
+            <view class="bossheadInfo">
+              <view class="weui-cell_Info_img">
+                <image class="weui-cell_Img" src="{{item.avatarUrl}}"></image>
+              </view>
+              <view class="weui-cell_all">
+                <view class="weui-cell_allName">{{item.nickName}}</view>
+                <view class="weui-cell_collegaImages">
+                  <image class="collegaImages"
+                    src="{{item.bosshead?'../icon/collega_true.png':'../icon/collega_false.png'}}"></image>
+                    <image class="adminImages"
+                    src="{{item.admin?'../icon/4.png':''}}"></image>
+                </view>
+              </view>
+
+              <view class="weui-cell_operate_img">
+                <view class="weui-cell_operate_add">
+                  <image id="{{item._id}}" class="weui-cell_cancelImg" src="../icon/icon_add.png" bindtap="addCollega">
+                  </image>
+                </view>
+                <view class="weui-cell_operate_del">
+                  <image id="{{item._id}}" data-id="{{item.admin}}" class="weui-cell_delete_user_Img" src="../icon/icon_cancel.png"
+                    bindtap="deleteUser">
+                  </image>
+                </view>
+              </view>
+            </view>
+            <view class="line"></view>
+          </block>
+
+          <mp-half-screen-dialog show="{{show}}" maskClosable="false">
+            <view slot="title">
+              <text>添加至社团人员</text>
+            </view>
+            <view slot="desc">
+              <view class="weui-cells__title">
+                <view>填写所在社团及职位</view>
+              </view>
+              <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                  <input class="weui-input" maxlength="15" bindinput="bindKeyInput" placeholder="输入社团及职位不超过15个字符" />
+                </view>
+              </view>
+            </view>
+            <view slot="footer">
+              <button type="primary" bindtap="btnDonate">确定</button>
+            </view>
+          </mp-half-screen-dialog>
+
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{curNav==5}}">
+      <!-- 管理文章 -->
+      <view class="blockInfo">
+        <view class="infoArea">
+          <block wx:for="{{articles}}" wx:key="index">
+            <view class="bossheadInfo">
+              <view class="weui-cell_articles_info">
+                <view class="weui-cell_title"><text class="tips">标题：</text>{{item.title}}</view>
+                <view class="weui-cell_type">分类：{{item.type}}</view>
+                <view class="weui-cell_title_Contents">
+                  <view class="weui-cell_title_articleContent">{{item.content}}</view>
+                </view>
+                <view class="weui-cell_articleInfo">
+                  <view class="weui-cell_author"><text class="tips">来源：</text>{{item.nickName}}</view>
+                </view>
+              </view>
+              <view class="weui-cell_delete_img">
+                <image id="{{item._id}}" class="weui-cell_deleteImg" src="../icon/icon_cancel.png"
+                  bindtap="deleteArticle"></image>
+              </view>
+            </view>
+            <view class="line"></view>
+          </block>
+        </view>
+      </view>
+    </view>
+
+
+    <view wx:if="{{curNav==6}}">
+      <!-- 评论列表 -->
+
+      <view class="blockInfo">
+        <view class="infoArea">
+          <block wx:for="{{comments}}" wx:key="index">
+
+            <view class="bossheadInfo">
+              <view class="weui-cell_articles_info">
+                <view class="weui-cell_comments">{{item.content}}</view>
+                <view class="weui-cell_commenter">昵称：{{item.commenter}}</view>
+                <view class="weui-cell_comment_Contents">
+                  <view class="weui-cell_title_commentContent"><text class="tips">标题：</text>{{item.articletitle}}
+                  </view>
+                  <view class="weui-cell_articleInfo">
+                    <view class="weui-cell_author"><text class="tips">分类：</text>{{item.articletype}}</view>
+                  </view>
+                </view>
+              </view>
+              <view class="weui-cell_delete_img">
+                <image id="{{item._id}}" class="weui-cell_deleteImg" src="../icon/icon_cancel.png"
+                  bindtap="deleteComment"></image>
+              </view>
+            </view>
+            <view class="line"></view>
+          </block>
+        </view>
+      </view>
+
+
+    </view>
+
+  </view>
+</view>

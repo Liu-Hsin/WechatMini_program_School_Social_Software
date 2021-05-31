@@ -1,0 +1,77 @@
+/* pages/index/index.wxss */
+
+/* 轮播图 */
+.swiper_lbt{
+  width: 700rpx;
+  height: 300rpx;
+  padding: 16rpx;
+}
+.bg{
+  width: 674rpx;
+  height: 300rpx;
+  display: block;
+  border-radius: 15px;
+  margin-left: 22rpx; 
+}
+
+.notice{
+  margin: 10rpx 25rpx;
+  height: 52rpx;
+  background-color: #dbdada1e;
+  padding-left: 10rpx;
+  display: flex;
+  flex-flow: row;
+  border-radius: 6px;
+}
+.noticeBar{
+  margin: 1rpx 0;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.noticeBarImg{
+  width: 48rpx;
+  height: 48rpx;
+}
+.swiper{
+    height: 50rpx;
+    width: 80vw;
+}
+.noticeBarText{
+  padding-left: 10px;
+  margin-left: 18px;
+  border-radius: 6px;
+}
+.swiperText{
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+/*项目分类*/
+.items{
+  width: 100%;
+  height: auto;
+  font-size: 38rpx;
+}
+.classification{
+  display: flex;
+  flex-flow: row;
+  margin: 10rpx 20rpx;
+
+}
+.itemsActivity{
+  width: 200rpx;
+  margin: 10rpx 0 10rpx 106rpx;
+  background-color: #f0f0f027;
+
+}
+.image{
+  width: 130rpx;
+  height: 130rpx;
+  margin: 5rpx 5rpx 5rpx 34rpx;
+}
+.activityText{
+  text-align: center;
+}

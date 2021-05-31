@@ -1,0 +1,198 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/college/college",
+          "pathName": "pages/college/college",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/college/addcollege/addcollege",
+          "pathName": "pages/college/addcollege/addcollege",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/setting/setting",
+          "pathName": "pages/me/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/setting/settingInfo/settingInfo",
+          "pathName": "pages/me/setting/settingInfo/settingInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/myissuance/myissuance",
+          "pathName": "pages/me/myissuance/myissuance",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/mycomment/mycomment",
+          "pathName": "pages/me/mycomment/mycomment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/sights/sights",
+          "pathName": "pages/index/sights/sights",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/sights/sightsdetail/sightsdetail",
+          "pathName": "pages/index/sights/sightsdetail/sightsdetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/myissuance/myissuance",
+          "pathName": "pages/me/myissuance/myissuance",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/activity/activity",
+          "pathName": "pages/activity/activity",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/issuance/issuance",
+          "pathName": "pages/issuance/issuance",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/share/sharedetail/sharedetail",
+          "pathName": "pages/index/share/sharedetail/sharedetail",
+          "query": "id=cbddf0af6084fca603900d7e0e9336bb",
+          "scene": null
+        },
+        {
+          "name": "pages/me/mycollect/mycollect",
+          "pathName": "pages/me/mycollect/mycollect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/myissuance/myissuance",
+          "pathName": "pages/me/myissuance/myissuance",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/articleList/articleList",
+          "pathName": "pages/articleList/articleList",
+          "query": "type=0",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

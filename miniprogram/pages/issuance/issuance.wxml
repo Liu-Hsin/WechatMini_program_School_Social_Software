@@ -1,0 +1,70 @@
+<view class="content" style="margin-top:10rpx">
+  <view class="content-input">
+    <view>
+      <textarea class='title-input' value="{{valueInput}}" autofocus bindinput="getTitle" maxlength='40'
+        placeholder="请输入标题" auto-height='{{true}}' />
+    </view>
+    <view class="line"></view>
+    <!-- 文本输入框 -->
+    <view>
+      <textarea class='text-input' autofocus bindinput="getContent" maxlength='200' placeholder="请输入文字内容"
+        auto-height='{{true}}' value="{{valueInput}}" />
+    </view>
+
+    <!-- 对于上传后的照片加以显示，可删除和添加 -->
+    <view class="image-list" wx:if="{{imageList.length > 0}}">
+      <view class="showImage box" wx:for="{{imageList}}" wx:key="item">
+        <view class="delete">
+          <image src="../icon/del.png" data-imageId="{{index}}" bindtap="deleteImage" />
+        </view>
+        <image src="{{item}}" mode="aspectFill" data-imageId="{{index}}" bindtap="thisImage"/>
+      </view>
+      <view class="addImage" wx:if="{{imageList.length < 9}}">
+        <image bindtap="chooseImage" src="../icon/add.png" />
+      </view>
+    </view>
+
+    <!-- 上传照片 -->
+    <view class="toUpload" wx:if="{{imageList.length <1}}">
+      <view class="uploadIcon">
+        <image src="../icon/addimags.png" bindtap="chooseImage" />
+      </view>
+    </view>
+
+    <!-- 是否匿名 -->
+    <view class="line"></view>
+    <view class="switch ">
+      <view class="weui-cell__bd">匿名发布</view>
+      <view class="weui-cell__ft">
+        <label class="weui-switch-cp">
+          <checkbox-group bindchange="postStatus">
+            <checkbox class="weui-switch-cp__input" checked="{{anonymous}}" />
+            <view class="weui-switch-cp__box"></view>
+          </checkbox-group>
+        </label>
+      </view>
+    </view>
+
+
+    <!-- 板块选择 -->
+    <view wx:if="{{topic.sorts && topic.sorts.length > 0}}">
+      <view class="line"></view>
+      <view class="tag-title">选择类型</view>
+      <scroll-view scroll-x scroll-with-animation enable-flex="true" class="tag-list">
+        <view class="tag" bindtap="clickTag" data-topicId="{{index}}"
+          style="{{index == topic.selected? 'color:' +theme.tabColor+ ';border-color:'+theme.tabColor:''}}"
+          wx:for="{{topic.sorts}}" wx:key="index">{{item}}</view>
+      </scroll-view>
+    </view>
+
+  </view>
+  <view class="sendArticle">
+    <label class="weui-agree">
+      <checkbox class="weui-agree__checkbox-check" checked="true" />
+      <span class="weui-agree__checkbox"></span>
+      <span class="weui-agree__text">阅读并同意<navigator url=" " class="weui-agree__link">《隐私条款》</navigator></span>
+    </label>
+    <a class="weui-btn weui-btn_primary confirm" bindtap="issuance">确认发布</a>
+  </view>
+
+</view>

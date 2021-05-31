@@ -1,0 +1,22 @@
+/* pages/me/mycomment/mycomment.wxss */
+page{
+  background-color: #d3d3d385;
+}
+.item{
+  background-color: #ffffff;
+  margin: 5px 10px 5px 10px;
+  padding: 4px;
+  border-radius: 15px;
+}
+.content{
+  font-size: 20px;
+  padding: 6px;
+}
+.acrticleInfo{
+  border-radius: 10px;
+  background-color: #e7e7e757;
+  margin: 4px 20px;
+  font-size: 14px;
+  color: #686868e3;
+  padding: 6px;
+}

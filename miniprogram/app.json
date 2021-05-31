@@ -1,0 +1,62 @@
+{
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+
+  "pages": [
+    "pages/index/index",
+    "pages/info/info",
+    "pages/login/login",
+    "pages/index/cet/cet",
+    "pages/activity/activity",
+    "pages/me/me",
+    "pages/college/college",
+    "pages/college/addcollege/addcollege",
+    "pages/me/myissuance/myissuance",
+    "pages/me/mycollect/mycollect",
+    "pages/me/mycomment/mycomment",
+    "pages/me/setting/setting",
+    "pages/me/setting/settingInfo/settingInfo",
+    "pages/issuance/issuance",
+    "pages/articleList/articleList",
+    "pages/detail/detail",
+    "pages/activity/activityDetail/activityDetail",
+    "pages/admin/admin",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#239DF8",
+    "navigationBarTitleText": "合经院社区",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "backgroundColor": "#1A73E8",
+    "color": "#0000",
+    "selectedColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/icon/home.png",
+        "selectedIconPath": "/pages/icon/home-select.png"
+      },
+      {
+        "pagePath": "pages/issuance/issuance",
+        "text": "发布",
+        "iconPath": "/pages/icon/issuance.png",
+        "selectedIconPath": "/pages/icon/issuance-select.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/pages/icon/me.png",
+        "selectedIconPath": "/pages/icon/me-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

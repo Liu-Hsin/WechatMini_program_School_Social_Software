@@ -1,0 +1,47 @@
+/* pages/activity/activityDetail/activityDetail.wxss */
+/* pages/activity/activity.wxss */
+.items{
+  margin: 20rpx 30rpx;
+  margin-bottom: 40px;
+}
+.itemTitle{
+  font-size: 40rpx;
+  margin: 8rpx 0;
+}
+.itemTags{
+  font-size: 35rpx;
+  margin-left: 10px;
+}
+.itemTag{
+  color: #4b4b4b;
+  margin: 8rpx;
+}
+
+
+.tagText{
+
+  width: 30%;
+  color: black;
+}
+.le{
+  height: 1rpx;
+  background: #ecececb6;
+  margin: 5rpx 10rpx ;
+}
+.itemContent{
+  font-size: 38rpx;
+  height: 140px;
+  padding: 20rpx;
+}
+.infoText{
+  font-size: 20px;
+  margin: 20rpx 0;
+}
+.date{
+  padding: 20rpx 0;
+}
+.line{
+  height: 1rpx;
+  background-color: #ecececb6;
+  margin: 20rpx 10rpx 20rpx 10rpx;  
+}
