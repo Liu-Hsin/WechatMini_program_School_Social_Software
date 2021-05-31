@@ -6,7 +6,7 @@
 
 ### 修改部分
 
-#####   1、/could/update_index/index.js
+#####   1、/cloud/update_index/index.js
 
  exports.main = async (event, context) => {
 
