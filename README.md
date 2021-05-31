@@ -4,29 +4,7 @@
 
 **2、代码是直接从微信开发者工具内推送，如需使用请 修改其中部分代码**
 
-### 修改部分
-
-#####   1、/cloud/update_index/index.js
-
- exports.main = async (event, context) => {
-
-​		 return await db.collection('index').where({
-
-​			  '_id':'b00064a76054bf6b0adc04827ae254ba',     // 修改此 id，该id为json数据库中字段的 id 
-
-​	 })
-
-######      数据库字段
-
-![image-20210531210925087](C:\Users\青轩\AppData\Roaming\Typora\typora-user-images\image-20210531210925087.png)
-
-##### 2、/miniprogram/pages/index / index.js        /pages/admin/admin.js
-
-![image-20210531211136641](C:\Users\青轩\AppData\Roaming\Typora\typora-user-images\image-20210531211136641.png)
-
-![image-20210531211616579](C:\Users\青轩\AppData\Roaming\Typora\typora-user-images\image-20210531211616579.png)
-
-改为自己数据库中的字段
+特别是appid 要改成自己的appid
 
 
 
