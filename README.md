@@ -5,6 +5,7 @@
 **2、代码是直接从微信开发者工具内推送，如需使用请 修改其中部分代码**
 
 特别是appid 要改成自己的appid
-
+主图如下
+![image](https://github.com/Liu-Hsin/WechatMini_program_School_Social_Software/assets/57285504/4a49d5b2-5e2e-4399-9dec-29307fb249e4)
 
 
